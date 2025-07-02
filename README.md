@@ -24,9 +24,10 @@ A hands-on computer vision workshop showcasing football player detection and tra
 ## 📌 Install dependencies and libraries
 Run the below commands in your environment terminal to install necessary libraries and dependencies.
 ```bash
+# Only clone the ByteTrack repo if you do NOT have it in your project folder
 git clone https://github.com/ifzhang/ByteTrack.git
-cd ByteTrack
 
+cd ByteTrack
 pip install -r requirements.txt
 pip install lap loguru cython scikit-image onnxruntime cython_bbox
 python setup.py develop

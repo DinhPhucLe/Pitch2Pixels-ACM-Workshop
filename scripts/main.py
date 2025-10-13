@@ -1,3 +1,12 @@
+import os, sys
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+byte_track_root = os.path.join(project_root, "ByteTrack")
+if byte_track_root not in sys.path:
+    sys.path.insert(0, byte_track_root)
+
 import cv2
 from ultralytics import YOLO
 import numpy as np
@@ -55,7 +64,7 @@ tracker=BYTETracker(
 )
 
 model = YOLO("../model/best-yolov8s.pt")
-cap = cv2.VideoCapture("../videos/ars_vs_mci.mp4")
+cap = cv2.VideoCapture("../videos/short.mp4")
 frame_counter = 0
 
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
@@ -67,6 +76,7 @@ while cap.isOpened():
         print("No frame captured")
         break
     frame_counter += 1
+    print(f"Frame: # {frame_counter}")
 
     results = model(frame, conf=0.4, iou=0.5)[0]
     boxes = results.boxes.xyxy.cpu().numpy()
@@ -128,7 +138,7 @@ while cap.isOpened():
         cv2.putText(frame, f"#{track_id} T{team+1}", (x, y-5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
     
-    #out.write(frame)
+    out.write(frame)
     cv2.imshow("tracking", frame)
     print(track_to_hue)
     if cv2.waitKey(1) & 0xFF == ord("q"):
@@ -136,6 +146,3 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
-print(frame_counter)
-
-# Check frame 750+++

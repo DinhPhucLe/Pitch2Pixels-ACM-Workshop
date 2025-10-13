@@ -1,153 +1,140 @@
-# videos
-# __pycache__/
-# .venv
-# *.py[cod]
-# *$py.class
-# *.so
-# dataset
+videos
+__pycache__/
+.venv
+dataset
 
 # Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+scripts/bytetrack/__pycache__/
+scripts/bytetrack/*.py[cod]
+scripts/bytetrack/*$py.class
 
 # C extensions
-*.so
+scripts/bytetrack/*.so
 
 # Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+scripts/bytetrack/.Python
+scripts/bytetrack/build/
+scripts/bytetrack/develop-eggs/
+scripts/bytetrack/dist/
+scripts/bytetrack/downloads/
+scripts/bytetrack/eggs/
+scripts/bytetrack/.eggs/
+scripts/bytetrack/lib/
+scripts/bytetrack/lib64/
+scripts/bytetrack/parts/
+scripts/bytetrack/sdist/
+scripts/bytetrack/var/
+scripts/bytetrack/wheels/
+scripts/bytetrack/pip-wheel-metadata/
+scripts/bytetrack/share/python-wheels/
+scripts/bytetrack/*.egg-info/
+scripts/bytetrack/.installed.cfg
+scripts/bytetrack/*.egg
+scripts/bytetrack/MANIFEST
 
 # PyInstaller
-# Usually these files are written by a python script from a template
-# before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+scripts/bytetrack/*.manifest
+scripts/bytetrack/*.spec
 
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+scripts/bytetrack/pip-log.txt
+scripts/bytetrack/pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+scripts/bytetrack/htmlcov/
+scripts/bytetrack/.tox/
+scripts/bytetrack/.nox/
+scripts/bytetrack/.coverage
+scripts/bytetrack/.coverage.*
+scripts/bytetrack/.cache
+scripts/bytetrack/nosetests.xml
+scripts/bytetrack/coverage.xml
+scripts/bytetrack/*.cover
+scripts/bytetrack/*.py,cover
+scripts/bytetrack/.hypothesis/
+scripts/bytetrack/.pytest_cache/
 
 # Translations
-*.mo
-*.pot
+scripts/bytetrack/*.mo
+scripts/bytetrack/*.pot
 
 # Django stuff
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+scripts/bytetrack/*.log
+scripts/bytetrack/local_settings.py
+scripts/bytetrack/db.sqlite3
+scripts/bytetrack/db.sqlite3-journal
 
 # Flask stuff
-instance/
-.webassets-cache
+scripts/bytetrack/instance/
+scripts/bytetrack/.webassets-cache
 
 # Scrapy stuff
-.scrapy
+scripts/bytetrack/.scrapy
 
 # Sphinx documentation
-docs/_build/
+scripts/bytetrack/docs/_build/
 
 # PyBuilder
-target/
+scripts/bytetrack/target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+scripts/bytetrack/.ipynb_checkpoints
 
 # IPython
-profile_default/
-ipython_config.py
+scripts/bytetrack/profile_default/
+scripts/bytetrack/ipython_config.py
 
 # pyenv
-.python-version
+scripts/bytetrack/.python-version
 
 # pipenv
-# According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-# However, in case of collaboration, if having platform-specific dependencies or dependencies
-# having no cross-platform support, pipenv may install dependencies that don't work, or not
-# install all needed dependencies.
 #Pipfile.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
+scripts/bytetrack/__pypackages__/
 
 # Celery stuff
-celerybeat-schedule
-celerybeat.pid
+scripts/bytetrack/celerybeat-schedule
+scripts/bytetrack/celerybeat.pid
 
 # SageMath parsed files
-*.sage.py
+scripts/bytetrack/*.sage.py
 
 # Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+scripts/bytetrack/.env
+scripts/bytetrack/.venv
+scripts/bytetrack/env/
+scripts/bytetrack/venv/
+scripts/bytetrack/ENV/
+scripts/bytetrack/env.bak/
+scripts/bytetrack/venv.bak/
 
 # Spyder project settings
-.spyderproject
-.spyproject
+scripts/bytetrack/.spyderproject
+scripts/bytetrack/.spyproject
 
 # Rope project settings
-.ropeproject
+scripts/bytetrack/.ropeproject
 
 # mkdocs documentation
-/site
+scripts/bytetrack/site/
 
 # mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+scripts/bytetrack/.mypy_cache/
+scripts/bytetrack/.dmypy.json
+scripts/bytetrack/dmypy.json
 
 # Pyre type checker
-.pyre/
+scripts/bytetrack/.pyre/
 
-# Project outputs / artifacts
-docs/api
-.code-workspace.code-workspace
-*.pkl
-*.npy
-*.pth
-*.onnx
-*.engine
-events.out.tfevents*
-pretrained/
-YOLOX_outputs/
-
-# Project-specific ignores
-videos/
-dataset/
+# Output / artifacts
+scripts/bytetrack/docs/api
+scripts/bytetrack/.code-workspace.code-workspace
+scripts/bytetrack/*.pkl
+scripts/bytetrack/*.npy
+scripts/bytetrack/*.pth
+scripts/bytetrack/*.onnx
+scripts/bytetrack/*.engine
+scripts/bytetrack/events.out.tfevents*
+scripts/bytetrack/pretrained/
+scripts/bytetrack/YOLOX_outputs/

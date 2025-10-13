@@ -1,0 +1,140 @@
+videos
+__pycache__/
+.venv
+dataset
+
+# Byte-compiled / optimized / DLL files
+scripts/bytetrack/__pycache__/
+scripts/bytetrack/*.py[cod]
+scripts/bytetrack/*$py.class
+
+# C extensions
+scripts/bytetrack/*.so
+
+# Distribution / packaging
+scripts/bytetrack/.Python
+scripts/bytetrack/build/
+scripts/bytetrack/develop-eggs/
+scripts/bytetrack/dist/
+scripts/bytetrack/downloads/
+scripts/bytetrack/eggs/
+scripts/bytetrack/.eggs/
+scripts/bytetrack/lib/
+scripts/bytetrack/lib64/
+scripts/bytetrack/parts/
+scripts/bytetrack/sdist/
+scripts/bytetrack/var/
+scripts/bytetrack/wheels/
+scripts/bytetrack/pip-wheel-metadata/
+scripts/bytetrack/share/python-wheels/
+scripts/bytetrack/*.egg-info/
+scripts/bytetrack/.installed.cfg
+scripts/bytetrack/*.egg
+scripts/bytetrack/MANIFEST
+
+# PyInstaller
+scripts/bytetrack/*.manifest
+scripts/bytetrack/*.spec
+
+# Installer logs
+scripts/bytetrack/pip-log.txt
+scripts/bytetrack/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+scripts/bytetrack/htmlcov/
+scripts/bytetrack/.tox/
+scripts/bytetrack/.nox/
+scripts/bytetrack/.coverage
+scripts/bytetrack/.coverage.*
+scripts/bytetrack/.cache
+scripts/bytetrack/nosetests.xml
+scripts/bytetrack/coverage.xml
+scripts/bytetrack/*.cover
+scripts/bytetrack/*.py,cover
+scripts/bytetrack/.hypothesis/
+scripts/bytetrack/.pytest_cache/
+
+# Translations
+scripts/bytetrack/*.mo
+scripts/bytetrack/*.pot
+
+# Django stuff
+scripts/bytetrack/*.log
+scripts/bytetrack/local_settings.py
+scripts/bytetrack/db.sqlite3
+scripts/bytetrack/db.sqlite3-journal
+
+# Flask stuff
+scripts/bytetrack/instance/
+scripts/bytetrack/.webassets-cache
+
+# Scrapy stuff
+scripts/bytetrack/.scrapy
+
+# Sphinx documentation
+scripts/bytetrack/docs/_build/
+
+# PyBuilder
+scripts/bytetrack/target/
+
+# Jupyter Notebook
+scripts/bytetrack/.ipynb_checkpoints
+
+# IPython
+scripts/bytetrack/profile_default/
+scripts/bytetrack/ipython_config.py
+
+# pyenv
+scripts/bytetrack/.python-version
+
+# pipenv
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+scripts/bytetrack/__pypackages__/
+
+# Celery stuff
+scripts/bytetrack/celerybeat-schedule
+scripts/bytetrack/celerybeat.pid
+
+# SageMath parsed files
+scripts/bytetrack/*.sage.py
+
+# Environments
+scripts/bytetrack/.env
+scripts/bytetrack/.venv
+scripts/bytetrack/env/
+scripts/bytetrack/venv/
+scripts/bytetrack/ENV/
+scripts/bytetrack/env.bak/
+scripts/bytetrack/venv.bak/
+
+# Spyder project settings
+scripts/bytetrack/.spyderproject
+scripts/bytetrack/.spyproject
+
+# Rope project settings
+scripts/bytetrack/.ropeproject
+
+# mkdocs documentation
+scripts/bytetrack/site/
+
+# mypy
+scripts/bytetrack/.mypy_cache/
+scripts/bytetrack/.dmypy.json
+scripts/bytetrack/dmypy.json
+
+# Pyre type checker
+scripts/bytetrack/.pyre/
+
+# Output / artifacts
+scripts/bytetrack/docs/api
+scripts/bytetrack/.code-workspace.code-workspace
+scripts/bytetrack/*.pkl
+scripts/bytetrack/*.npy
+scripts/bytetrack/*.pth
+scripts/bytetrack/*.onnx
+scripts/bytetrack/*.engine
+scripts/bytetrack/events.out.tfevents*
+scripts/bytetrack/pretrained/
+scripts/bytetrack/YOLOX_outputs/

@@ -2,6 +2,7 @@ videos
 __pycache__/
 .venv
 dataset
+Pitch2Pixels.png
 
 # Byte-compiled / optimized / DLL files
 scripts/bytetrack/__pycache__/

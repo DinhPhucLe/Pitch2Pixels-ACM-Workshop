@@ -21,43 +21,28 @@ A hands-on computer vision workshop showcasing football player detection and tra
 5. KMeans clusters players into teams (only first frame)
 6. Assign team labels to players 🏷️
 7. Output annotated video
-## 📌 Install dependencies and libraries
-Run the below commands in your environment terminal to install necessary libraries and dependencies.
+## 📌 How to Run?
+Set up your Virtual Environment
 ```bash
-# Only clone the ByteTrack repo if you do NOT have it in your project folder
-git clone https://github.com/ifzhang/ByteTrack.git
-
-cd ByteTrack
-pip install -r requirements.txt
-pip install lap loguru cython scikit-image onnxruntime cython_bbox
-python setup.py develop
-pip install ultralytics
+python -m venv .venv
+.venv/Scripts/activate
 ```
-## 🏃 How to use?
-Once the dependencies are installed, you can run the main script.
-1.  **Prepare your input video:** Place your football match video (e.g., `input_match.mp4`) in a designated `videos/` folder within the project root,
-or specify its path directly in the command.
+Install required libraries and packages
+```bash
+pip install -r requirements.txt
+```
+Go to `/scripts/pipeline.py` and edit the `video_path` to where you store your footage and `output_path` to your preferences.
+```bash
+...
+if __name__ == "__main__":
+    video_path = r"WHERE_YOU_STORE_YOUR_VIDEO"
+    with open(video_path, "rb") as f:
+        video_bytes = f.read()
+    
+    processed_video = run_pipeline(video_bytes)
 
-2. **Adjust the video path in `/scripts/main.py` file:**
-   ```bash
-   ...
-   model = YOLO("../model/best-yolov8s.pt")
-   # Edit the input video path
-   cap = cv2.VideoCapture("../videos/input.mp4")
-   frame_counter = 0
-
-   fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-   # Edit the desired output video name and video resolution to match input resolution
-   out = cv2.VideoWriter('../videos/output.mp4', fourcc, 20.0, (resolution_width, resolution_height))
-   ...
-   ```
-
-3. **Run the detection and tracking script:**
-   ```bash
-   cd scripts   # Change directory to the folder containing script
-   python main.py   # Run the script
-   ```
-    * **Note:** Replace `main.py` with the actual name of your main script if it's different (e.g., `run.py`, `demo.py`).
-    * The script used in this repo is `main.py`.
-
-4. **View the output:** The annotated video will be saved as `output_match_annotated.mp4` (or whatever name you specify) in your project directory.
+    output_path = r"YOUR_OUTPUT_PATH"
+    with open(output_path, "wb") as f:
+        f.write(processed_video)
+...
+```

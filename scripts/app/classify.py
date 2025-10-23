@@ -14,7 +14,6 @@ def getDominantColor(frame):
 
     mask = cv2.bitwise_and(colorful_mask, hue_mask)
     masked_hue = hsv[:, :, 0][mask > 0]
-
     hist = cv2.calcHist([masked_hue], [0], None, [180], [0, 180])
 
     dominant_hue = int(np.argmax(hist))
